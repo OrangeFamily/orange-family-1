@@ -2,10 +2,12 @@
   "name": "orange-family",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://AlekseyDemydov.github.io/orange-family",
+
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /orange-family/"
+    "build": "parcel build src/*.html --public-url /orange-family/",
+    "predeploy": "npm run build",
+    "deploy":"netlify deploy -p"
   },
   "repository": {
     "type": "git",
